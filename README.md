@@ -52,19 +52,19 @@ Examples of suitable replacements include:
 
 ## References
 
-Warin, T. (2025). *From Coase to AI agents: Why the economics of the firm still matters in the age of automation*. California Management Review Insights. ([warin.ca][1])
+Warin, T. (2025). *From Coase to AI agents: Why the economics of the firm still matters in the age of automation*. California Management Review Insights.
 
-Warin, T. (2024). Access Statistics Canada’s open economic data for statistics and data-science courses. *Technology Innovations in Statistics Education, 15*(1), 1–20. ([warin.ca][1])
+Warin, T. (2024). Access Statistics Canada’s open economic data for statistics and data-science courses. *Technology Innovations in Statistics Education, 15*(1), 1–20.
 
-Warin, T., d’Anglade, P. M., & de Marcellis-Warin, N. (2025). Optimising industrial efficiency: Integrating K-means clustering and data science for sustainable manufacturing and waste reduction. *International Journal of Sustainable Engineering, 18*(1). ([warin.ca][1])
+Warin, T., d’Anglade, P. M., & de Marcellis-Warin, N. (2025). Optimising industrial efficiency: Integrating K-means clustering and data science for sustainable manufacturing and waste reduction. *International Journal of Sustainable Engineering, 18*(1).
 
-Warin, T., & Sanger, W. (2018). Connectivity and closeness among international financial institutions: A network theory perspective. *International Journal of Comparative Management, 1*(3), 225–254. ([warin.ca][2])
+Warin, T., & Sanger, W. (2018). Connectivity and closeness among international financial institutions: A network theory perspective. *International Journal of Comparative Management, 1*(3), 225–254.
 
-Marty, F., & Warin, T. (2025). Data and computing power: The new frontiers of competition in generative AI. CIRANO Working Papers. ([ideas.repec.org][3])
+Marty, F., & Warin, T. (2025). Data and computing power: The new frontiers of competition in generative AI. CIRANO Working Papers.
 
-Warin, T. (2025). GDP 5.0: Real-time, micro-founded and sustainable metrics for beyond-GDP economic assessment. CIRANO Working Papers. ([ideas.repec.org][3])
+Warin, T. (2025). GDP 5.0: Real-time, micro-founded and sustainable metrics for beyond-GDP economic assessment. CIRANO Working Papers.
 
-Warin, T. (2025). Gravity models versus comparative advantage: It is not enough for trade to be free; trade should also be fit. CIRANO Working Papers. ([ideas.repec.org][3])
+Warin, T. (2025). Gravity models versus comparative advantage: It is not enough for trade to be free; trade should also be fit. CIRANO Working Papers
 
 Rodríguez-Pose, A. (2018). The revenge of the places that don’t matter. *Cambridge Journal of Regions, Economy and Society, 11*(1), 189–209.
 
