@@ -1,5 +1,9 @@
 # Geospatial Data Science
 
+This material accompanies the broader **Geospatial Data Science** project and illustrates how official statistical sources can be combined with spatial data to produce research-ready datasets.
+
+
+
 ## Global Regional Risk Dataset — Data Dictionary
 
 | Variable               | Description                                                                                                                   | Level              | Source                                  | Year   | Notes                                                                              |

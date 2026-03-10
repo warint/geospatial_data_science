@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: Geospatial Data Science: Geoeconomic and Geopolitical Regional Risks Dataset
+message: "If you use this repository, please cite it as follows."
+type: dataset
+authors:
+  - family-names: Warin
+    given-names: Thierry
+    affiliation: HEC Montréal
+    orcid: https://orcid.org/0000-0002-5921-3428
+repository-code: https://github.com/warint/geospatial_data_science
+abstract: >
+  Reproducible geospatial data science workflows for constructing
+  regional economic datasets. Includes a research-grade NUTS-2
+  dataset integrating GDP, unemployment, migration, and
+  industrial structure indicators for spatial analysis.
+license: MIT
+version: 1.0
+date-released: 2025
+keywords:
+  - geospatial data science
+  - economic geography
+  - geoeconomics
+  - spatial analysis
+  - Eurostat
+  - NUTS regions
