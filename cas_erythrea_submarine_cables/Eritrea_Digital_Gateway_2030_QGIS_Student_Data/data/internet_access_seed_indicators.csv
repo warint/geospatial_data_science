@@ -1,0 +1,10 @@
+iso3,country_or_group,indicator,unit,year,value,source,note
+ERI,Eritrea,Internet users,per 100 people,2019,11.2,World Bank via FRED ITNETUSERP2ERI,"Observed value reported by FRED, public domain citation requested."
+ERI,Eritrea,Internet users,per 100 people,2020,14.3494,World Bank via FRED ITNETUSERP2ERI,"Observed value reported by FRED, public domain citation requested."
+ERI,Eritrea,Internet users,per 100 people,2021,18.3844,World Bank via FRED ITNETUSERP2ERI,"Observed value reported by FRED, public domain citation requested."
+ERI,Eritrea,Internet users,per 100 people,2022,18.7092,World Bank via FRED ITNETUSERP2ERI,"Observed value reported by FRED, public domain citation requested."
+ERI,Eritrea,Internet users,per 100 people,2023,20.0104,World Bank via FRED ITNETUSERP2ERI,"Observed value reported by FRED, public domain citation requested."
+WORLD,World,Internet users,percent of population,2024,68.0,ITU Facts and Figures 2024,Global estimate.
+AFR,Africa,Internet users,percent of population,2024,38.0,ITU Facts and Figures 2024,Regional estimate.
+LIC,Low-income countries,Internet users,percent of population,2024,27.0,ITU Facts and Figures 2024,Income-group estimate.
+LDC,Least developed countries,Internet users,percent of population,2024,35.0,ITU Facts and Figures 2024,Group estimate.

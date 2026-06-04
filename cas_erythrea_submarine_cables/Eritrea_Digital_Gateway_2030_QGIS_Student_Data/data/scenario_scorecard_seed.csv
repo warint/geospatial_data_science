@@ -1,0 +1,16 @@
+scenario,criterion,base_score_1_low_5_high,rationale
+S1 Terrestrial fiber via Sudan,Capex,4,"Low cost, but route-risk costs may be hidden."
+S1 Terrestrial fiber via Sudan,Speed to launch,3,Construction can be relatively fast if cross-border permissions hold.
+S1 Terrestrial fiber via Sudan,Scalability,2,Bandwidth depends on leased backhaul and Sudan network quality.
+S1 Terrestrial fiber via Sudan,Sovereignty,1,High foreign transit dependence.
+S1 Terrestrial fiber via Sudan,Resilience,1,Single corridor through high-risk territory.
+S2 LEO satellite bridge,Capex,3,Low upfront cost but recurring service charges dominate.
+S2 LEO satellite bridge,Speed to launch,5,Fastest option for emergency connectivity.
+S2 LEO satellite bridge,Scalability,2,Limited capacity for national backbone and knowledge-intensive services.
+S2 LEO satellite bridge,Sovereignty,2,Dependence on private foreign constellations.
+S2 LEO satellite bridge,Resilience,3,"Flexible and redeployable, but exposed to vendor and licensing risk."
+S3 Submarine cable landing,Capex,1,Most expensive option.
+S3 Submarine cable landing,Speed to launch,1,"Slowest option due to permits, marine works, and station construction."
+S3 Submarine cable landing,Scalability,5,Best long-term capacity and latency.
+S3 Submarine cable landing,Sovereignty,4,High sovereignty if landing station has open-access national governance.
+S3 Submarine cable landing,Resilience,4,Strong if paired with redundancy and cable protection governance.

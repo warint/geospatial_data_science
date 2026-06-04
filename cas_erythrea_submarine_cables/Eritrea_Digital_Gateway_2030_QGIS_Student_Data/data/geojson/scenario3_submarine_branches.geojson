@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "scenario3_submarine_branches",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "scenario": "S3", "name": "Branch to Massawa", "capex_usd_mn_low": 35, "capex_usd_mn_high": 50, "implementation_months_low": 18, "implementation_months_high": 24, "capacity_gbps_low": 400, "capacity_gbps_high": 600, "risk_summary": "High capital cost and permitting complexity; strongest scalability and sovereignty upside.", "source": "Synthetic classroom route; not derived from proprietary cable charts or nautical data." }, "geometry": { "type": "LineString", "coordinates": [ [ 40.75, 16.35 ], [ 40.25, 16.1 ], [ 39.4746, 15.6081 ] ] } },
+{ "type": "Feature", "properties": { "scenario": "S3_alt", "name": "Alternative branch to Assab", "capex_usd_mn_low": 30, "capex_usd_mn_high": 45, "implementation_months_low": 18, "implementation_months_high": 24, "capacity_gbps_low": 300, "capacity_gbps_high": 500, "risk_summary": "Alternative landing for redundancy; lower national-demand reach without inland backbone extension.", "source": "Synthetic classroom route; not derived from proprietary cable charts or nautical data." }, "geometry": { "type": "LineString", "coordinates": [ [ 42.05, 13.55 ], [ 42.7394, 13.0092 ] ] } }
+]
+}

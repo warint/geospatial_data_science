@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "scenario1_terrestrial_route",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "scenario": "S1", "name": "Terrestrial fiber via Sudan to Eritrea ports", "capex_usd_mn_low": 8, "capex_usd_mn_high": 11, "implementation_months_low": 9, "implementation_months_high": 15, "capacity_gbps_low": 40, "capacity_gbps_high": 100, "risk_summary": "Low capital cost but high exposure to Sudan instability, cross-border dependence, and maintenance disruption.", "source": "Synthetic classroom route derived from the case narrative; not an engineering alignment." }, "geometry": { "type": "LineString", "coordinates": [ [ 32.5599, 15.5007 ], [ 33.5199, 14.4012 ], [ 35.3833, 14.0333 ], [ 36.4, 15.451 ], [ 36.6575, 15.1109 ], [ 37.5928, 15.1139 ], [ 38.9251, 15.3229 ], [ 39.4746, 15.6081 ], [ 42.7394, 13.0092 ] ] } },
+{ "type": "Feature", "properties": { "scenario": "S1", "name": "Shendi-Khartoum backhaul segment", "capex_usd_mn_low": 0, "capex_usd_mn_high": 0, "implementation_months_low": 0, "implementation_months_high": 0, "capacity_gbps_low": 40, "capacity_gbps_high": 100, "risk_summary": "Existing or leased backhaul segment in the classroom scenario.", "source": "Synthetic classroom route derived from the case narrative; not an engineering alignment." }, "geometry": { "type": "LineString", "coordinates": [ [ 33.4341, 16.6915 ], [ 32.5599, 15.5007 ] ] } }
+]
+}

@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "red_sea_cable_corridors_schematic",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "cable": "SEA-ME-WE 5 schematic corridor", "status": "active_context", "note": "Schematic Red Sea corridor for classroom visualization only.", "source": "Schematic classroom layer, not TeleGeography coordinate data and not suitable for engineering or navigation." }, "geometry": { "type": "LineString", "coordinates": [ [ 32.55, 29.97 ], [ 37.0, 23.5 ], [ 39.19, 21.49 ], [ 41.0, 17.5 ], [ 43.145, 11.589 ], [ 45.019, 12.786 ] ] } },
+{ "type": "Feature", "properties": { "cable": "AAE-1 schematic corridor", "status": "active_context", "note": "Schematic Red Sea corridor for classroom visualization only.", "source": "Schematic classroom layer, not TeleGeography coordinate data and not suitable for engineering or navigation." }, "geometry": { "type": "LineString", "coordinates": [ [ 32.3, 31.27 ], [ 37.3, 24.0 ], [ 39.6, 21.6 ], [ 41.2, 17.0 ], [ 43.145, 11.589 ], [ 45.019, 12.786 ] ] } },
+{ "type": "Feature", "properties": { "cable": "PEACE schematic corridor", "status": "active_context", "note": "Schematic Red Sea corridor for classroom visualization only.", "source": "Schematic classroom layer, not TeleGeography coordinate data and not suitable for engineering or navigation." }, "geometry": { "type": "LineString", "coordinates": [ [ 32.55, 29.97 ], [ 36.5, 24.5 ], [ 39.19, 21.49 ], [ 42.0, 14.0 ], [ 45.019, 12.786 ] ] } },
+{ "type": "Feature", "properties": { "cable": "Octopus/Medusa-style proposed corridor", "status": "fictionalized_case_context", "note": "Fictionalized corridor aligned with the case narrative; not an operator route.", "source": "Schematic classroom layer, not TeleGeography coordinate data and not suitable for engineering or navigation." }, "geometry": { "type": "LineString", "coordinates": [ [ 12.0, 37.0 ], [ 20.0, 34.0 ], [ 30.0, 31.0 ], [ 33.0, 29.5 ], [ 36.5, 24.0 ], [ 40.75, 16.35 ], [ 43.145, 11.589 ] ] } }
+]
+}

@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "risk_points_synthetic",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Khartoum instability zone", "country": "Sudan", "risk_type": "conflict_governance", "risk_score": 5, "radius_km": 130, "source": "Synthetic risk layer for classroom mapping. Replace with ACLED or other licensed event data for empirical analysis." }, "geometry": { "type": "Point", "coordinates": [ 32.5599, 15.5007 ] } },
+{ "type": "Feature", "properties": { "name": "Gezira corridor instability zone", "country": "Sudan", "risk_type": "conflict_governance", "risk_score": 4, "radius_km": 110, "source": "Synthetic risk layer for classroom mapping. Replace with ACLED or other licensed event data for empirical analysis." }, "geometry": { "type": "Point", "coordinates": [ 33.5199, 14.4012 ] } },
+{ "type": "Feature", "properties": { "name": "Gedaref-Kassala corridor risk", "country": "Sudan", "risk_type": "security_logistics", "risk_score": 3, "radius_km": 90, "source": "Synthetic risk layer for classroom mapping. Replace with ACLED or other licensed event data for empirical analysis." }, "geometry": { "type": "Point", "coordinates": [ 35.9, 14.7 ] } },
+{ "type": "Feature", "properties": { "name": "Border maintenance exposure", "country": "Eritrea/Sudan", "risk_type": "maintenance_access", "risk_score": 3, "radius_km": 75, "source": "Synthetic risk layer for classroom mapping. Replace with ACLED or other licensed event data for empirical analysis." }, "geometry": { "type": "Point", "coordinates": [ 36.65, 15.11 ] } },
+{ "type": "Feature", "properties": { "name": "Red Sea cable chokepoint exposure", "country": "Red Sea", "risk_type": "maritime_chokepoint", "risk_score": 4, "radius_km": 160, "source": "Synthetic risk layer for classroom mapping. Replace with ACLED or other licensed event data for empirical analysis." }, "geometry": { "type": "Point", "coordinates": [ 43.0, 12.7 ] } }
+]
+}

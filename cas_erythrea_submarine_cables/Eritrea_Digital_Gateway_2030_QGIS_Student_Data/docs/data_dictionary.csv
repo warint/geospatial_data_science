@@ -1,0 +1,15 @@
+file_or_layer,geometry_type,crs,n_features,key_fields,description
+eritrea_digital_gateway_2030.gpkg:countries_context,Polygon,EPSG:4326,11,"country, iso3, continent, pop_est_ne, gdp_md_est, case_role, source",Natural Earth country polygons for regional context.
+eritrea_digital_gateway_2030.gpkg:eritrea_cities,Point,EPSG:4326,11,"name, role, demand_index, note, source",Candidate national demand and routing nodes in Eritrea.
+eritrea_digital_gateway_2030.gpkg:regional_nodes,Point,EPSG:4326,13,"name, country, role, strategic_weight, source",Regional telecom and port nodes used in scenarios.
+eritrea_digital_gateway_2030.gpkg:scenario1_terrestrial_route,LineString,EPSG:4326,2,"scenario, name, capex_usd_mn_low, capex_usd_mn_high, implementation_months_low, implementation_months_high, capacity_gbps_low, capacity_gbps_high",Synthetic terrestrial fiber route through Sudan.
+eritrea_digital_gateway_2030.gpkg:scenario2_satellite_sites,Point,EPSG:4326,3,"name, scenario, radius_km, capex_usd_mn, monthly_opex_usd_low, monthly_opex_usd_high, capacity_mbps_low, capacity_mbps_high",Synthetic LEO gateway locations.
+eritrea_digital_gateway_2030.gpkg:scenario2_satellite_buffers_50km,Polygon,EPSG:4326,3,"name, scenario, radius_km, capex_usd_mn, monthly_opex_usd_low, monthly_opex_usd_high, capacity_mbps_low, capacity_mbps_high",Coverage buffers around synthetic LEO gateways.
+eritrea_digital_gateway_2030.gpkg:scenario3_submarine_branches,LineString,EPSG:4326,2,"scenario, name, capex_usd_mn_low, capex_usd_mn_high, implementation_months_low, implementation_months_high, capacity_gbps_low, capacity_gbps_high",Synthetic submarine branch alternatives to Massawa and Assab.
+eritrea_digital_gateway_2030.gpkg:scenario3_domestic_backbone,LineString,EPSG:4326,6,"segment, role, source",Synthetic domestic fiber backbone after landing.
+eritrea_digital_gateway_2030.gpkg:red_sea_cable_corridors_schematic,LineString,EPSG:4326,4,"cable, status, note, source",Schematic Red Sea corridors for classroom context.
+eritrea_digital_gateway_2030.gpkg:risk_points_synthetic,Point,EPSG:4326,5,"name, country, risk_type, risk_score, radius_km, source",Synthetic risk centroids for route analysis.
+eritrea_digital_gateway_2030.gpkg:risk_zones_synthetic,Polygon,EPSG:4326,5,"name, country, risk_type, risk_score, radius_km, source",Synthetic risk buffers for visual overlay.
+governance_actors.csv,None,None,8,"actor, type, role_in_case, strategic_issue",Stakeholder analysis table.
+scenario_scorecard_seed.csv,None,None,15,"scenario, criterion, base_score_1_low_5_high, rationale",Starter scoring table for student decision analysis.
+internet_access_seed_indicators.csv,None,None,9,"iso3, country_or_group, indicator, year, value, source",Small seed table of connectivity indicators cited in the case.

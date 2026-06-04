@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "scenario2_satellite_sites",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Asmara LEO gateway", "scenario": "S2", "radius_km": 50, "capex_usd_mn": 0.6, "monthly_opex_usd_low": 40000, "monthly_opex_usd_high": 90000, "capacity_mbps_low": 50, "capacity_mbps_high": 150, "source": "Synthetic classroom locations and parameters from the case scenario." }, "geometry": { "type": "Point", "coordinates": [ 38.9251, 15.3229 ] } },
+{ "type": "Feature", "properties": { "name": "Massawa LEO gateway", "scenario": "S2", "radius_km": 50, "capex_usd_mn": 0.6, "monthly_opex_usd_low": 40000, "monthly_opex_usd_high": 90000, "capacity_mbps_low": 50, "capacity_mbps_high": 150, "source": "Synthetic classroom locations and parameters from the case scenario." }, "geometry": { "type": "Point", "coordinates": [ 39.4746, 15.6081 ] } },
+{ "type": "Feature", "properties": { "name": "Assab LEO gateway", "scenario": "S2", "radius_km": 50, "capex_usd_mn": 0.6, "monthly_opex_usd_low": 40000, "monthly_opex_usd_high": 90000, "capacity_mbps_low": 50, "capacity_mbps_high": 150, "source": "Synthetic classroom locations and parameters from the case scenario." }, "geometry": { "type": "Point", "coordinates": [ 42.7394, 13.0092 ] } }
+]
+}
