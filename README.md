@@ -1,159 +1,218 @@
 # Exploitation and Exploration of Geospatial Data
 
-## HEC Montréal — Geospatial Data Science Teaching Repository
+## HEC Montréal course repository
 
-This repository supports the course **Exploitation and Exploration of Geospatial Data** at HEC Montréal. It is designed as a teaching and research companion for students who want to understand how geographical data can be collected, structured, analyzed, mapped, and interpreted in the study of global transformations.
+This repository supports the course **Exploitation and Exploration of Geospatial Data** at HEC Montréal. The course is built around a simple methodological proposition: many economic, political, technological, and social transformations are also spatial transformations. They unfold across territories, corridors, borders, ports, cities, infrastructures, and networks. Geospatial data make those structures visible and analytically tractable.
 
-The central premise of the course is simple: many contemporary transformations are not only economic, political, technological, or environmental. They are also spatial. Supply chains, migration corridors, innovation systems, territorial inequalities, climate exposure, political regimes, and global value networks all have a geography. This repository provides reproducible materials for learning how to make that geography visible, analyzable, and empirically useful.
+The repository provides teaching material for students who need to move from a substantive question to a spatial research design, assemble relevant data, work with geographic information systems, and communicate evidence through maps. It is intended for students in management, economics, international business, public policy, development, and data science.
 
-## Institutional Context
+The current case module is **Eritrea Digital Gateway 2030**, a case-method exercise on submarine cables, Internet access, digital sovereignty, and economic development.
 
-| Item | Description |
-| --- | --- |
-| Course title | Exploitation and Exploration of Geospatial Data |
-| French title | Exploitation et exploration des données géospatiales |
-| Institution | HEC Montréal |
-| Subject | Methodology |
-| Programs | Master of Science and PhD, depending on the course code |
-| Course codes | METH 60018 / METH 60018A and METH 70001 / METH 70001A |
-| Credits | 3 |
-| Main orientation | Geographic information systems, spatial data analysis, global transformations, and organizational risk |
+---
 
-The course introduces geographic information systems and geospatial data analysis as methodological tools for understanding major global transformations. It emphasizes both structured and unstructured data, including administrative indicators, geocoded information, satellite imagery, drone imagery, and other forms of geosensing.
+## Case module: Eritrea Digital Gateway 2030
 
-## Course Orientation
+**Eritrea Digital Gateway 2030: Connecting a Country after Isolation** is a case study about the economic and strategic consequences of digital exclusion. The case asks what happens when a country is geographically close to the main arteries of the global Internet but remains institutionally, technically, and commercially disconnected from them.
 
-This repository is not a static collection of files. It is a methodological workspace. Students are expected to move between concepts, code, maps, and interpretation. The objective is to develop the ability to formulate a spatial research question, identify appropriate spatial units, assemble data from official and open sources, evaluate the limits of the data, and produce interpretable spatial outputs.
+At the center of the case is Idriss Gaye, director of strategic projects at ORIZON-Telecom. In July 2025, he is asked to prepare a strategic recommendation for connecting Eritrea to the global Internet after a long period of political isolation. The decision is not framed as a purely technical problem. It is a governance problem, a development problem, and a geospatial decision problem.
 
-The course is particularly relevant for students in management, international business, economics, public policy, and data science who need to analyze how organizations are exposed to risks and opportunities across territories. The same logic applies to questions of trade, finance, supply chains, environmental exposure, innovation diffusion, political instability, migration, and regional development.
+Students must evaluate three connectivity scenarios:
 
-## Learning Objectives
+1. a terrestrial fibre connection through Sudan;
+2. a satellite-based interim architecture;
+3. a submarine cable landing and domestic fibre backbone linked to regional cable infrastructure.
 
-| Dimension | Expected learning outcome |
-| --- | --- |
-| Spatial reasoning | Translate a substantive question into a spatial research design. |
-| Data literacy | Understand spatial units, geometries, coordinate systems, attributes, and joins. |
-| Reproducible workflow | Use R scripts to collect, clean, transform, and export spatial datasets. |
-| GIS practice | Use QGIS to organize layers, design maps, and export cartographic outputs. |
-| Empirical interpretation | Read maps critically and distinguish spatial description from causal inference. |
-| Research communication | Document assumptions, data sources, limitations, and analytical choices. |
+The larger question is whether access to the Internet, and therefore access to knowledge, markets, platforms, education, finance, and administrative capacity, should be treated as a peripheral infrastructure issue or as a foundational condition for economic development.
 
-## Repository Structure
+---
 
-| Path | Role in the course |
-| --- | --- |
-| `data_geoeconomic_geopolitical_risks/` | Reproducible data module for constructing a European regional dataset on geoeconomic and geopolitical risk. |
-| `data_geoeconomic_geopolitical_risks/code/build_europe_dataset.R` | R script that downloads Eurostat indicators, retrieves GISCO NUTS geometries, joins the data, and exports tabular and spatial files. |
-| `cas_agence_developpement/` | Applied QGIS case containing source data, base-map layers, a QGIS template, exported maps, and a practical mapping guide. |
-| `CITATION.cff` | Citation metadata for the repository and dataset. |
-| `geospatial_data_science.Rproj` | RStudio project file for working with the repository in a reproducible local environment. |
+## Learning objectives
 
-## Main Teaching Modules
+By the end of the case, students should be able to explain why submarine cables and landing stations are critical infrastructures in the contemporary economy; compare alternative models of digital infrastructure governance; use QGIS to inspect the spatial implications of competing connectivity scenarios; connect map-based evidence with strategic decision-making; and formulate a defensible recommendation under conditions of uncertainty, institutional fragility, and geopolitical rivalry.
 
-### 1. Geoeconomic and Geopolitical Regional Risks Dataset
+The case is designed for a case-method classroom discussion combined with a QGIS laboratory. It requires students to read the narrative, interpret geospatial layers, compare strategic options, and defend a recommendation before a simulated technical committee.
 
-This module shows how official statistical data can be combined with spatial geometries to build a research-ready dataset. The current workflow focuses on European NUTS-2 regions and uses regional indicators from Eurostat together with GISCO geometries. It is intended to help students understand the complete analytical chain: selecting spatial units, downloading indicators, cleaning variables, joining tabular and spatial data, checking missingness, and exporting files for analysis or cartography.
+---
 
-| Variable | Interpretation | Pedagogical use |
+## Teaching package
+
+The case package contains three main components.
+
+| File | Audience | Purpose |
 | --- | --- | --- |
-| `nuts_id` | NUTS-2 regional identifier | Spatial key for joins and mapping. |
-| `region_name` | Name of the region | Human-readable regional label. |
-| `country` | Country code | National grouping variable. |
-| `gdp_pps_eu27` | GDP per capita in purchasing power standards, with EU27 as reference | Indicator of regional prosperity. |
-| `unemployment_rate` | Regional unemployment rate | Indicator of labour-market conditions. |
-| `net_migration_rate` | Regional net migration rate | Indicator of demographic dynamics. |
-| `manufacturing_emp` | Employment in manufacturing | Measure of industrial structure. |
-| `total_emp` | Total employment | Denominator for sectoral employment shares. |
-| `manufacturing_share` | Manufacturing employment as a share of total employment | Indicator of industrial specialization. |
-| `manufacturing_change` | Change in manufacturing share relative to a base year | Proxy for industrial restructuring or deindustrialization. |
+| `Eritrea_Digital_Gateway_2030_Case_Study.docx` | Students | Case narrative, decision context, scenarios, exhibits, and discussion questions. |
+| `Eritrea_Digital_Gateway_2030_Teaching_Note.docx` | Instructors | Teaching plan, learning objectives, class flow, expected arguments, QGIS use, and assessment guidance. |
+| `Eritrea_Digital_Gateway_2030_QGIS_Student_Data.zip` | Students | QGIS-ready geospatial layers, seed indicators, metadata, and assignment materials. |
 
-### 2. Applied QGIS Case: Agence de développement
+The teaching note should not be placed in a public folder accessible to students before the case discussion. If this repository is public, store the teaching note in a private repository, a private release, or a restricted learning-management-system folder.
 
-This module is designed as a practical cartography exercise. It guides students through the organization of source data, the use of background layers, the management of a QGIS project template, and the export of maps. The purpose is to connect technical GIS operations with analytical communication: a map is not only a visualization, but also a structured argument about space.
+---
 
-## Reproducibility
+## Suggested repository structure
 
-The European regional dataset can be regenerated from the repository root with the following R command:
-
-```r
-source("data_geoeconomic_geopolitical_risks/code/build_europe_dataset.R")
-```
-
-The script uses the following R packages:
-
-```r
-install.packages(c("sf", "dplyr", "readr", "stringr", "eurostat", "giscoR", "janitor"))
-```
-
-When executed successfully, the script writes two files:
+The following structure is recommended for the GitHub version of the course repository.
 
 ```text
-europe_nuts2_research_dataset.csv
-europe_nuts2_research_dataset.gpkg
+geospatial_data_science/
+├── README.md
+├── case_studies/
+│   └── eritrea_digital_gateway_2030/
+│       ├── README.md
+│       ├── Eritrea_Digital_Gateway_2030_Case_Study.docx
+│       ├── instructor_private/
+│       │   └── Eritrea_Digital_Gateway_2030_Teaching_Note.docx
+│       └── figures/
+├── qgis_data/
+│   └── eritrea_digital_gateway_2030/
+│       └── Eritrea_Digital_Gateway_2030_QGIS_Student_Data.zip
+├── data_geoeconomic_geopolitical_risks/
+├── cas_agence_developpement/
+├── CITATION.cff
+└── geospatial_data_science.Rproj
 ```
 
-The CSV file is suitable for tabular analysis. The GeoPackage file can be opened in QGIS or used directly in R for spatial analysis.
+A simpler public version can place the student case and the QGIS zip at the root of the repository. The instructor note should still remain outside the public student path unless the course design intentionally makes it available after the session.
 
-## Data Sources and Spatial Units
+---
 
-| Source | Role in the repository |
-| --- | --- |
-| Eurostat | Regional economic, demographic, labour-market, and employment indicators. |
-| GISCO | NUTS geometries used to construct spatial layers. |
-| QGIS | Desktop GIS environment used in the applied cartography case. |
-| R | Reproducible programming environment used for data collection, transformation, and export. |
+## QGIS data package
 
-The use of NUTS-2 regions is pedagogically useful because it gives students an intermediate territorial scale: more precise than national aggregates, but still sufficiently harmonized for comparative regional analysis. This makes the dataset appropriate for studying development gaps, labour-market variation, industrial specialization, migration patterns, and other territorial dimensions of global transformation.
+The QGIS package is designed for classroom use. It gives students enough spatial material to compare scenarios without treating the exercise as an engineering study. The dataset includes a GeoPackage, GeoJSON exports, tabular decision files, metadata, a QGIS assignment template, and a preview map.
 
-## Course Themes Reflected in the Repository
+```text
+Eritrea_Digital_Gateway_2030_QGIS_Student_Data/
+├── README.md
+├── data/
+│   ├── eritrea_digital_gateway_2030.gpkg
+│   ├── governance_actors.csv
+│   ├── internet_access_seed_indicators.csv
+│   ├── scenario_scorecard_seed.csv
+│   └── geojson/
+│       ├── countries_context.geojson
+│       ├── eritrea_cities.geojson
+│       ├── regional_nodes.geojson
+│       ├── scenario1_terrestrial_route.geojson
+│       ├── scenario2_satellite_sites.geojson
+│       ├── scenario2_satellite_buffers_50km.geojson
+│       ├── scenario3_submarine_branches.geojson
+│       ├── scenario3_domestic_backbone.geojson
+│       ├── red_sea_cable_corridors_schematic.geojson
+│       ├── risk_points_synthetic.geojson
+│       └── risk_zones_synthetic.geojson
+├── docs/
+│   ├── data_dictionary.csv
+│   ├── metadata_sources.md
+│   └── qgis_assignment_template.md
+├── maps/
+│   └── preview_scenario_layers.png
+├── qgis/
+│   └── layer_order_suggestion.md
+└── scripts/
+    └── fetch_worldbank_internet_users.py
+```
 
-| Theme | How it appears in the materials |
-| --- | --- |
-| Nature of geographic data | Spatial units, attributes, geometries, administrative boundaries, and territorial scale. |
-| Geographic information systems | QGIS projects, map layers, visual hierarchy, and export workflows. |
-| Geocoding and georeferencing | Conceptual preparation for transforming locations, images, and textual data into spatial objects. |
-| Structured geospatial data | Eurostat indicators, NUTS geometries, and reproducible spatial joins. |
-| Unstructured geospatial data | Extension toward social media, patents, satellite imagery, drone imagery, and geosensing. |
-| Global transformations | Political regimes, trade and finance, innovation, migration, climate exposure, supply chains, and territorial risk. |
+The most convenient entry point for students is the GeoPackage file, `eritrea_digital_gateway_2030.gpkg`. The GeoJSON layers are included for transparency, inspection, and reuse in other GIS or web-mapping tools.
 
-## Suggested Use in Class
+---
 
-| Course activity | Repository use |
-| --- | --- |
-| Lecture preparation | Introduce spatial thinking, GIS concepts, and the logic of territorial data. |
-| Lab session | Run the R workflow, inspect variables, and open the GeoPackage in QGIS. |
-| Case discussion | Use the Agence de développement module to connect map design with analytical interpretation. |
-| Student assignment | Ask students to replace, extend, or critique one indicator and document its implications. |
-| Research project | Use the dataset as a starting point for exploratory spatial analysis or regional political economy research. |
+## Quick start for students
 
-## Methodological Position
+Download `Eritrea_Digital_Gateway_2030_QGIS_Student_Data.zip` and unzip it locally. Open QGIS, create a new project, and add `data/eritrea_digital_gateway_2030.gpkg` as a vector data source. Load the scenario layers, the city layer, the regional-node layer, and the risk layers. Use `qgis/layer_order_suggestion.md` to organize the map visually.
 
-The repository treats maps as empirical objects rather than illustrations. A map can clarify a pattern, but it can also hide uncertainty, exaggerate differences, or imply relationships that the data do not establish. Students should therefore document spatial units, temporal coverage, missing data, transformations, joins, and classification choices. This practice is central to responsible geospatial data science.
+Students should prepare at least three maps before the case discussion. The first map should diagnose Eritrea’s position in the Red Sea connectivity corridor. The second should compare the three scenarios in terms of geography, coverage, and exposure to risk. The third should support the student’s final recommendation. The maps are not expected to decide the case automatically. Their purpose is to discipline the discussion by showing what each option makes visible and what each option leaves unresolved.
 
-## Limitations
+---
 
-The materials are intended for teaching and exploratory research. Some datasets may require updates as official sources revise their classifications or release new years of data. The European regional workflow depends on Eurostat and GISCO availability, and the interpretation of spatial patterns should be made with attention to scale, measurement, missingness, and the difference between descriptive mapping and causal analysis.
+## Suggested student assignment
+
+Students are asked to write a short strategic memorandum addressed to Idriss Gaye before the Nairobi technical committee. The memorandum should recommend one connectivity strategy, justify the recommendation with QGIS evidence, and identify the principal governance safeguards required for implementation.
+
+A strong submission should distinguish short-term connectivity from long-term structural transformation. It should also recognize that the cheapest option may not be the most resilient option, that the fastest option may not create durable sovereignty, and that a high-capacity cable is not sufficient unless the domestic regulatory and institutional architecture can sustain it.
+
+---
+
+## Analytical frame
+
+The case can be taught through four linked concepts.
+
+First, **connectivity as development infrastructure**. Broadband access is not only a consumer service. It affects education, firms, public administration, financial inclusion, labor-market matching, and the circulation of knowledge.
+
+Second, **submarine cables as strategic infrastructure**. Submarine cables and landing stations are physical assets through which the global Internet is materially organized. Their geography is therefore a matter of power, dependence, vulnerability, and opportunity.
+
+Third, **digital sovereignty as governance capacity**. Sovereignty is not simply ownership of an asset. It also depends on regulation, cybersecurity, maintenance, procurement, competition policy, data governance, and the ability to negotiate with external partners.
+
+Fourth, **maps as decision instruments**. In this case, QGIS is not used to make decorative maps. It is used to compare routes, coverage, proximity, risk, and institutional trade-offs. The map is a decision instrument because it clarifies how an infrastructure choice redistributes opportunity and vulnerability across space.
+
+---
+
+## Data status and limitations
+
+The data package is intended for teaching and exploratory analysis. It is not a nautical chart, an engineering design file, a security assessment, or an investment prospectus. Some layers are schematic, simplified, or synthetic. The risk layers in the student package are synthetic teaching layers and should not be interpreted as operational conflict data.
+
+Instructors who replace the synthetic layers with official or third-party data must verify the license and redistribution conditions of each source before committing those files to GitHub. This is particularly important for datasets such as ACLED, commercial telecommunications datasets, proprietary cable maps, and firm-level databases.
+
+The case narrative is a pedagogical simulation. It is designed to represent realistic strategic tensions in digital infrastructure development, but the fictional organizations, negotiations, costs, and governance sequence should not be cited as factual evidence about Eritrea, ORIZON-Telecom, or any real infrastructure project.
+
+---
+
+## Recommended classroom sequence
+
+The case can be taught in a 150- to 180-minute session.
+
+| Phase | Time | Activity |
+| --- | ---: | --- |
+| Opening | 20–30 min | Establish the economic development problem: what does digital isolation do to firms, public services, and knowledge access? |
+| Map workshop | 30–40 min | Use QGIS to inspect the three connectivity scenarios and identify what the spatial evidence suggests. |
+| Scenario debate | 40–50 min | Divide students into groups representing the terrestrial, satellite, submarine, and governance-risk perspectives. |
+| Decision meeting | 30–40 min | Simulate the Nairobi technical committee and require each group to defend a recommendation. |
+| Debrief | 15–20 min | Separate the technical recommendation from the governance conditions required to make it viable. |
+
+---
+
+## Connection with the course
+
+This module fits the course because it requires students to combine spatial data, geopolitical reasoning, development economics, and managerial decision-making. The case also illustrates the broader course theme that global transformations can be studied through spatial evidence: the geography of infrastructures, the uneven diffusion of technology and knowledge, the exposure of organizations to political risk, and the use of GIS to support strategic decisions.
+
+The case can be used after sessions on vector data, coordinate reference systems, spatial joins, buffers, routes, choropleth maps, and critical cartography. It can also serve as a bridge toward more advanced modules on infrastructure resilience, international business risk, or the geography of digital platforms.
+
+---
 
 ## Citation
 
-If you use this repository or the dataset in teaching, research, or derivative work, please cite it as follows:
+If you use this case or adapt the QGIS package, cite the repository and the case materials as follows.
 
-Warin, T. (2025). *Geospatial Data Science: Geoeconomic and Geopolitical Regional Risks Dataset* (Version 1.0) [Data set]. GitHub. https://github.com/warint/geospatial_data_science
+Warin, T., & Marcon, B. (2025). *Eritrea Digital Gateway 2030: Connecting a Country after Isolation* [Case study and QGIS teaching package]. HEC Montréal, course repository for *Exploitation and Exploration of Geospatial Data*. GitHub. https://github.com/warint/geospatial_data_science
 
-## References and Official Sources
+Warin, T. (2025). *Geospatial Data Science: Course repository for Exploitation and Exploration of Geospatial Data* [Teaching repository]. GitHub. https://github.com/warint/geospatial_data_science
 
-European Commission. (n.d.). *NUTS—Nomenclature of territorial units for statistics*. Eurostat. https://ec.europa.eu/eurostat/web/nuts
+---
 
-European Commission. (n.d.). *Regional statistics database*. Eurostat. https://ec.europa.eu/eurostat/web/regions/database
+## Selected references
 
-European Commission. (n.d.). *Territorial units for statistics (NUTS)*. GISCO. https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics
+African Union. (2020). *The digital transformation strategy for Africa (2020–2030)*. African Union Commission. https://au.int/en/documents/20200518/digital-transformation-strategy-africa-2020-2030
 
-HEC Montréal. (2026). *Exploitation and Exploration of Geospatial Data: METH 60018A*. HEC Montréal Course Portal. https://www.hec.ca/en/courses/meth-60018a-exploitation-and-exploration-geospatial-data
+Cariolle, J. (2019). *Telecommunication submarine-cable deployment and the digital divide in Sub-Saharan Africa* (FERDI Working Paper P241). Fondation pour les études et recherches sur le développement international. https://ferdi.fr/dl/df-9h5z9RWRNm4adFraG5Zd9YpS/ferdi-p241-telecommunication-submarine-cable-deployment-and.pdf
 
-HEC Montréal. (2026). *Exploitation and Exploration of Geospatial Data: METH 70001A*. HEC Montréal Course Portal. https://www.hec.ca/en/courses/meth-70001a-exploitation-and-exploration-geospatial-data
+HEC Montréal. (2026). *METH 60018A — Exploitation and Exploration of Geospatial Data*. HEC Montréal Course Portal. https://www.hec.ca/en/courses/meth-60018a-exploitation-and-exploration-geospatial-data
 
-Rodríguez-Pose, A. (2018). The revenge of the places that do not matter (and what to do about it). *Cambridge Journal of Regions, Economy and Society, 11*(1), 189–209. https://doi.org/10.1093/cjres/rsx024
+HEC Montréal. (2026). *METH 70001A — Exploitation and Exploration of Geospatial Data*. HEC Montréal Course Portal. https://www.hec.ca/en/courses/meth-70001a-exploitation-and-exploration-geospatial-data
+
+Hjort, J., & Poulsen, J. (2019). The arrival of fast Internet and employment in Africa. *American Economic Review, 109*(3), 1032–1079. https://doi.org/10.1257/aer.20161385
+
+International Cable Protection Committee. (2024). *Government best practices for protecting and promoting resilience of submarine telecommunications cables*. https://www.iscpc.org/publications/icpc-best-practices/
+
+Minges, M. (2015). *Exploring the relationship between broadband and economic growth*. World Bank. https://documents.worldbank.org/curated/en/178701467988875888/pdf/102955-WP-Box394845B-PUBLIC-WDR16-BP-Exploring-the-Relationship-between-Broadband-and-Economic-Growth-Minges.pdf
+
+Qiang, C. Z.-W., Rossotto, C. M., & Kimura, K. (2009). Economic impacts of broadband. In World Bank, *Information and communications for development 2009: Extending reach and increasing impact* (pp. 35–50). World Bank. https://documents.worldbank.org/curated/en/645821468337815208/pdf/487910PUB0EPI1101Official0Use0Only1.pdf
+
+Raymond, M., & DeNardis, L. (2015). Multistakeholderism: Anatomy of an inchoate global institution. *International Theory, 7*(3), 572–616. https://doi.org/10.1017/S1752971915000081
+
+Starosielski, N. (2015). *The undersea network*. Duke University Press. https://www.dukeupress.edu/the-undersea-network
+
+TeleGeography. (n.d.). *Submarine cable map*. https://www.submarinecablemap.com/
+
+---
 
 ## License
 
-The repository citation metadata identifies the license as MIT.
+Unless otherwise specified in a dedicated `LICENSE` file, the code and teaching materials in this repository should be treated as course materials requiring attribution. Data redistributed from third-party sources remain subject to the licenses and terms of their original providers.
