@@ -104,39 +104,6 @@ The script uses `sf`, `dplyr`, `readr`, `stringr`, `eurostat`, `giscoR`, and `ja
 
 ---
 
-## Suggested repository structure
-
-The following structure is recommended for the GitHub version of the course repository after adding the Eritrea case package.
-
-```text
-geospatial_data_science/
-├── README.md
-├── eritrea_digital_gateway_2030/
-│   ├── README.md
-│   ├── case/
-│   │   └── Eritrea_Digital_Gateway_2030_Case_Study.docx
-│   ├── qgis_student_data/
-│   │   └── Eritrea_Digital_Gateway_2030_QGIS_Student_Data.zip
-│   ├── figures/
-│   └── instructor_private/
-│       └── Eritrea_Digital_Gateway_2030_Teaching_Note.docx
-├── cas_agence_developpement/
-│   ├── 01_Base_de_données/
-│   ├── 02_Fond_de_carte/
-│   ├── 03_Template_QGIS/
-│   ├── 05_Exports_cartes/
-│   └── Guide_Cartes_ADEs_QGIS.pdf
-├── data_geoeconomic_geopolitical_risks/
-│   ├── README.md
-│   └── code/
-├── CITATION.cff
-└── geospatial_data_science.Rproj
-```
-
-A simpler public version can place the student case and the QGIS zip at the root of the repository. The instructor note should still remain outside the public student path unless the course design intentionally makes it available after the session.
-
----
-
 ## QGIS data package for the Eritrea case
 
 The QGIS package is designed for classroom use. It gives students enough spatial material to compare scenarios without treating the exercise as an engineering study. The dataset includes a GeoPackage, GeoJSON exports, tabular decision files, metadata, a QGIS assignment template, and a preview map.
